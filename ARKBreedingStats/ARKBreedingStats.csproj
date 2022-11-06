@@ -83,6 +83,7 @@
     <Compile Include="ArkConstants.cs" />
     <Compile Include="Ark.cs" />
     <Compile Include="BreedingPlanning\BreedingScore.cs" />
+    <Compile Include="Program.main.cs" />
     <Compile Include="library\AddDummyCreaturesSettings.cs">
       <SubType>Form</SubType>
     </Compile>

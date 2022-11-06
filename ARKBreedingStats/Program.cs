@@ -6,11 +6,10 @@ using ARKBreedingStats.uiControls;
 using ARKBreedingStats.utils;
 
 namespace ARKBreedingStats
-{
-    static class Program
+{    
+    partial class Program
     {
-        [STAThread]
-        static void Main()
+        static void RunGraphical()
         {
 #if !DEBUG
             AppDomain currentDomain = AppDomain.CurrentDomain;
