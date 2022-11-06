@@ -188,6 +188,8 @@ Options:
             {
                 // Prevent the prompt to update
                 Properties.Settings.Default.lastUpdateCheck = DateTime.Now;
+                // Prevent the prompt for unknown species
+                Properties.Settings.Default.IgnoreUnknownBlueprintsOnSaveImport = true;
                 Form1_Load(this, EventArgs.Empty);
                 NewCollection(true);
             }
