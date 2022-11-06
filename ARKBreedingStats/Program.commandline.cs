@@ -189,6 +189,7 @@ Options:
                 // Prevent the prompt to update
                 Properties.Settings.Default.lastUpdateCheck = DateTime.Now;
                 Form1_Load(this, EventArgs.Empty);
+                NewCollection(true);
             }
 
             internal Settings_Accessor CreateSettingsDialog()
@@ -207,6 +208,7 @@ Options:
 
             internal void LoadLibrary(string library)
             {
+                NewCollection(true);
                 LoadCollectionFile(library);
             }
 

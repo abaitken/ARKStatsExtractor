@@ -25,7 +25,7 @@ namespace ARKBreedingStats
         /// Creates a new collection.
         /// </summary>
         /// <param name="resetCollection">If true, the user is not asked and a new collection is created. This can be used if something went wrong while loading a file and a clean collection is needed.</param>
-        private void NewCollection(bool resetCollection = false)
+        protected void NewCollection(bool resetCollection = false)
         {
             if (!resetCollection
                 && UnsavedChanges()
