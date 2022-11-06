@@ -188,7 +188,7 @@ namespace ARKBreedingStats
             }
         }
 
-        private void SaveCollectionToFileName(string filePath)
+        protected void SaveCollectionToFileName(string filePath)
         {
             // remove expired timers if setting is set
             if (Properties.Settings.Default.DeleteExpiredTimersOnSaving)
@@ -330,7 +330,7 @@ namespace ARKBreedingStats
         /// <param name="keepCurrentCreatures">add the creatures of the loaded file to the current ones</param>
         /// <param name="keepCurrentSelections">don't change the species selection or tab, use if a synchronized library is loaded</param>
         /// <returns></returns>
-        private bool LoadCollectionFile(string filePath, bool keepCurrentCreatures = false, bool keepCurrentSelections = false, bool triggeredByFileWatcher = false)
+        protected bool LoadCollectionFile(string filePath, bool keepCurrentCreatures = false, bool keepCurrentSelections = false, bool triggeredByFileWatcher = false)
         {
             Species selectedSpecies = speciesSelector1.SelectedSpecies;
             Species selectedLibrarySpecies = listBoxSpeciesLib.SelectedItem as Species;

@@ -29,7 +29,7 @@ namespace ARKBreedingStats
         /// Imports the creatures from the given saveGame. ftp is possible.
         /// </summary>
         /// <returns>null on success, else an error message to show, or an empty string if the error was already displayed.</returns>
-        private async Task<string> RunSavegameImport(ATImportFileLocation atImportFileLocation)
+        protected async Task<string> RunSavegameImport(ATImportFileLocation atImportFileLocation)
         {
             TsbQuickSaveGameImport.Enabled = false;
             TsbQuickSaveGameImport.BackColor = Color.Yellow;

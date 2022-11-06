@@ -23,7 +23,7 @@ namespace ARKBreedingStats
 {
     public partial class Form1 : Form
     {
-        private CreatureCollection _creatureCollection = new CreatureCollection();
+        protected CreatureCollection _creatureCollection = new CreatureCollection();
         private string _currentFileName;
         private bool _collectionDirty;
 
@@ -194,7 +194,7 @@ namespace ARKBreedingStats
             _reactOnCreatureSelectionChange = true;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        protected void Form1_Load(object sender, EventArgs e)
         {
             SetLocalizations(false);
 

@@ -674,7 +674,7 @@ namespace ARKBreedingStats.settings
             }
         }
 
-        private void ExtractSettingsFromFile(string file)
+        protected void ExtractSettingsFromFile(string file)
         {
             if (!File.Exists(file))
                 return;
